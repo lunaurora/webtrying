@@ -1,0 +1,221 @@
+/* 通用样式 */
+body {
+    font-family: 'Roboto Mono', monospace, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* 深色背景 */
+    color: #e0e0e0; /* 亮色文字 */
+    scroll-behavior: smooth; /* 平滑滚动 */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #00e676; /* 科技绿 */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #00b0ff; /* 科技蓝 */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #82b1ff; /* 悬停颜色变亮 */
+}
+
+/* 头部 */
+header {
+    background-color: #1f1f1f;
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 2px solid #00e676;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+header .tagline {
+    font-size: 1.2em;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* 导航项之间的间距 */
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #00e676;
+    color: #121212;
+}
+
+/* 区域样式 */
+.section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #1f1f1f;
+    margin-bottom: 1px; /* 分隔各section */
+    border-top: 1px solid #2a2a2a;
+}
+
+.hero {
+    background-color: #121212;
+    padding: 80px 0;
+    border-bottom: 1px solid #00e676;
+}
+
+.hero p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.hero .quote {
+    font-style: italic;
+    color: #00b0ff;
+    margin-top: 30px;
+    font-size: 1.3em;
+}
+
+/* 技能网格 */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.skills-grid span {
+    background-color: #2a2a2a;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    color: #00e676;
+    border: 1px solid #00e676;
+}
+
+/* 项目样式 */
+.project-item {
+    background-color: #2a2a2a;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 700px;
+    text-align: left;
+    border-left: 5px solid #00b0ff;
+}
+
+.project-item h3 {
+    color: #00b0ff;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.project-item p {
+    color: #cccccc;
+    margin-bottom: 15px;
+}
+
+.project-item a {
+    display: inline-block;
+    background-color: #00e676;
+    color: #121212;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-item a:hover {
+    background-color: #00b0ff;
+    color: #fff;
+}
+
+/* 联系方式 */
+.contact-links {
+    margin-top: 30px;
+}
+
+.contact-links a {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px 20px;
+    background-color: #00b0ff;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contact-links a:hover {
+    background-color: #82b1ff;
+}
+
+/* 页脚 */
+footer {
+    background-color: #1f1f1f;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    border-top: 1px solid #2a2a2a;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav ul li a {
+        padding: 5px 10px;
+    }
+    .section {
+        padding: 40px 0;
+    }
+    .hero {
+        padding: 60px 0;
+    }
+    .skills-grid span {
+        padding: 8px 15px;
+        font-size: 0.8em;
+    }
+    .project-item {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+    .contact-links a {
+        margin: 10px 10px;
+        padding: 8px 15px;
+    }
+}
